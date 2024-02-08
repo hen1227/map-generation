@@ -22,9 +22,9 @@ function setup() {
   rooms.push(initialRoom);
   transitionQueue.push(...initialRoom.getAllTransitions());
 
-  let room = Room.generate()
+  // let room = Room.generate()
   for(let i = 0; i < numberOfRooms; i++){
-    possibleRooms.push(room.copy())
+    possibleRooms.push(Room.generate())
   }
 }
 
